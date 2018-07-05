@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.janvi.mowik">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FrenchActivity"
+            android:label="French"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GermanActivity"
+            android:label="German"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SanskritActivity"
+            android:label="Sanskrit"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NumbersActivity"
+            android:label="@string/category_numbers"
+            android:parentActivityName=".FrenchActivity" />
+        <activity
+            android:name=".FamilyActivity"
+            android:label="@string/category_family"
+            android:parentActivityName=".FrenchActivity" />
+        <activity
+            android:name=".ColorsActivity"
+            android:label="@string/category_colors"
+            android:parentActivityName=".FrenchActivity" />
+        <activity
+            android:name=".PhrasesActivity"
+            android:label="@string/category_phrases"
+            android:parentActivityName=".FrenchActivity" />
+        <activity
+            android:name=".weekActivity"
+            android:label="@string/category_weeks"
+            android:parentActivityName=".FrenchActivity" />
+        <activity
+            android:name=".week2Activity"
+            android:label="@string/category_weeks"
+            android:parentActivityName=".SanskritActivity" />
+        <activity
+            android:name=".Weeks1Activity"
+            android:label="@string/category_weeks"
+            android:parentActivityName=".GermanActivity" />
+        <activity android:name=".Colors1Activity"
+            android:label="@string/category_colors"
+            android:parentActivityName=".GermanActivity" />
+        <activity android:name=".Family1Activity"
+            android:label="@string/category_family"
+            android:parentActivityName=".GermanActivity" />
+        <activity android:name=".Phrases1Activity"
+            android:label="@string/category_phrases"
+            android:parentActivityName=".GermanActivity" />
+        <activity android:name=".Numbers1Activity"
+            android:label="@string/category_numbers"
+            android:parentActivityName=".GermanActivity" />
+        <activity android:name=".Colors2Activity"
+            android:label="@string/category_colors"
+            android:parentActivityName=".SanskritActivity" />
+        <activity android:name=".Family2Activity"
+            android:label="@string/category_family"
+            android:parentActivityName=".SanskritActivity" />
+        <activity android:name=".Phrases2Activity"
+            android:label="@string/category_phrases"
+            android:parentActivityName=".SanskritActivity" />
+        <activity android:name=".Numbers2Activity"
+            android:label="@string/category_numbers"
+            android:parentActivityName=".SanskritActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+    </application>
+
+</manifest>
